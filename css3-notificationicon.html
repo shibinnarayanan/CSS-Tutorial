@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #header {
+        height: 50px;
+        background-color: rgb(10 86 147);
+        display: flex;
+      }
+      #left {
+        flex: 4;
+      }
+      #middle {
+        flex: 6;
+      }
+      #right {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .icon {
+        font-size: 22px;
+        color: white;
+      }
+      #notification-container
+      {
+        position: relative;
+      }
+      #count
+      {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="left"></div>
+      <div id="middle"></div>
+      <div id="right">
+        <i class="fa fa-home icon" aria-hidden="true"></i>
+        <div id ="notification-container"><i id =  "notification" class="fa fa-bell icon" aria-hidden="true"></i><span id="count">3</span></div>
+        <i class="fa fa-user-o icon" aria-hidden="true"></i>
+      </div>
+    </div>
+  </body>
+</html>
